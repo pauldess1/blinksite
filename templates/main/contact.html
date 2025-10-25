@@ -1,6 +1,26 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
+{% block head %}
+<title>Contact – Blinksite, site vitrine clé en main pour indépendants</title>
+<meta name="description" content="Contactez Blinksite pour réserver votre site vitrine clé en main. Paiement uniquement après mise en ligne. Services pour indépendants et petites structures.">
+<meta name="keywords" content="contact, site vitrine, indépendant, freelance, réservation site web, blinksite">
+<meta name="author" content="Blinksite">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Contact – Blinksite">
+<meta property="og:description" content="Réservez votre site vitrine clé en main. Paiement uniquement après mise en ligne.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.blinksite.fr/contact/">
+<meta property="og:image" content="https://www.blinksite.fr/static/images/preview.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact – Blinksite">
+<meta name="twitter:description" content="Réservez votre site vitrine clé en main. Paiement uniquement après mise en ligne.">
+<meta name="twitter:image" content="https://www.blinksite.fr/static/images/preview.png">
+{% endblock %}
+
 {% block content %}
 {% with accent_color_hex='#8b5cf6' accent_hover='#a78bfa' accent_light='#8b5cf6' %}
 
