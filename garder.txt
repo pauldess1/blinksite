@@ -1,0 +1,31 @@
+<!-- Nos points forts -->
+  <div class="max-w-screen-xl mx-auto py-16 text-center">
+     <h2 class="text-3xl font-bold mb-8">Nos points forts</h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+       
+       <div class="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+         <img src="{% static 'images/graduation-cap-solid-full.svg' %}" class="w-12 h-12 mx-auto mb-4 text-[#1cabb0]" alt="Expertise">
+         <h3 class="font-semibold text-lg mb-2">Expertise reconnue</h3>
+         <p class="text-gray-600 text-sm">Des années d’expérience dans le sport santé.</p>
+       </div>
+   
+       <div class="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+         <img src="{% static 'images/people-arrows-solid-full.svg' %}" class="w-12 h-12 mx-auto mb-4 text-[#1cabb0]" alt="Écoute & Adaptation">
+         <h3 class="font-semibold text-lg mb-2">Écoute & Adaptation</h3>
+         <p class="text-gray-600 text-sm">Chaque projet est conçu selon vos besoins.</p>
+       </div>
+   
+       <div class="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+         <img src="{% static 'images/person-solid-full.svg' %}" class="w-12 h-12 mx-auto mb-4 text-[#1cabb0]" alt="Accompagnement humain">
+         <h3 class="font-semibold text-lg mb-2">Accompagnement humain</h3>
+         <p class="text-gray-600 text-sm">Une approche bienveillante et motivante.</p>
+       </div>
+   
+       <div class="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+         <img src="{% static 'images/chart-line-solid-full.svg' %}" class="w-12 h-12 mx-auto mb-4 text-[#1cabb0]" alt="Résultats mesurables">
+         <h3 class="font-semibold text-lg mb-2">Résultats mesurables</h3>
+         <p class="text-gray-600 text-sm">Des suivis précis pour constater les progrès.</p>
+       </div>
+   
+     </div>
+   </div>

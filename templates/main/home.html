@@ -1,0 +1,41 @@
+{% extends 'main/base.html' %}
+
+{% block head %}
+<title>{% block title %}blinksite – Activité Physique Adaptée{% endblock %}</title>
+<meta name="description" content="blinksite, enseignante en activité physique adaptée à Antony, Sceaux, Bourg-la-Reine et Châtenay-Malabry. Séances individuelles et collectives pour le bien-être et la santé.">
+<meta name="keywords" content="sport santé, activité physique adaptée, Milla Todorovic, blinksite, Antony, Sceaux, Bourg-la-Reine, Châtenay-Malabry">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "blinksite",
+  "image": "https://www.blinksite.fr/static/images/logo_darkgray.svg",
+  "url": "https://www.blinksite.fr",
+  "telephone": "0661931639",
+  "email": "milla.eapa@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15 rue du Sud",
+    "addressLocality": "Antony",
+    "postalCode": "92160",
+    "addressCountry": "FR"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Milla Todorovic"
+  },
+  "description": "blinksite propose des séances d'activité physique adaptée pour le sport santé à Antony, Sceaux, Bourg-la-Reine et Châtenay-Malabry. Séances individuelles et collectives adaptées à tous.",
+  "sameAs": [
+    "https://www.linkedin.com/in/milla-todorovic/"
+  ],
+  "areaServed": ["Antony","Sceaux","Bourg-la-Reine","Châtenay-Malabry"],
+  "priceRange": "€"
+}
+</script>
+{% endblock %}
+
+{% block content %}
+{% include 'main/hero.html' %}
+{% include 'main/packs.html' %}
+{% include 'main/how_it_works_section.html' %}
+{% endblock %}

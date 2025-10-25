@@ -1,0 +1,69 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="py-8"></div>
+<section class="bg-white dark:bg-gray-800 py-20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <h1 class="text-4xl font-bold text-gray-900 dark:text-white text-center">
+      Comment nous créons votre site en 1 journée
+    </h1>
+    <p class="mt-4 text-lg text-gray-600 dark:text-gray-300 text-center max-w-3xl mx-auto">
+      Rapidité, simplicité et personnalisation : suivez le parcours de votre site vitrine étape par étape.
+    </p>
+
+    <div class="mt-16 relative">
+
+      <!-- Timeline vertical -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300 dark:bg-gray-700"></div>
+
+      <!-- Étape 1 -->
+      <div class="relative flex flex-col md:flex-row items-center mb-20">
+        <div class="md:w-1/2 md:pr-12 text-right md:text-right">
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">Proposition rapide</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Vous nous fournissez quelques photos et une description de votre activité. Nous créons une maquette simple et moderne adaptée à votre identité.
+          </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center md:justify-start mt-6 md:mt-0">
+          <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-[#8b5cf6] rounded-full shadow-lg">
+            <img src="{% static 'images/clipboard-solid-full.svg' %}" alt="Proposition rapide" class="w-10 md:w-12">
+          </div>
+        </div>
+      </div>
+
+      <!-- Étape 2 -->
+      <div class="relative flex flex-col md:flex-row-reverse items-center mb-20">
+        <div class="md:w-1/2 md:pl-12 text-left">
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">Phase d'ajustement</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Vous proposez vos ajustements ou validez la maquette. Nous affinons le site rapidement pour qu’il reflète votre identité visuelle, tout en restant simple et rapide.
+          </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
+          <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-[#8b5cf6] rounded-full shadow-lg">
+            <img src="{% static 'images/people-arrows-solid-full.svg' %}" alt="Phase d'ajustement" class="w-10 md:w-12">
+          </div>
+        </div>
+      </div>
+
+      <!-- Étape 3 -->
+      <div class="relative flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 md:pr-12 text-right md:text-right">
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">Mise en ligne & suivi</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Votre site est publié en moins de 24h. Paiement mensuel simple, sans facture de développement. Les ajustements peuvent se faire au fur et à mesure, tout en restant centrés sur un site vitrine.
+          </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center md:justify-start mt-6 md:mt-0">
+          <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-[#8b5cf6] rounded-full shadow-lg">
+            <img src="{% static 'images/chart-line-solid-full.svg' %}" alt="Mise en ligne" class="w-10 md:w-12">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

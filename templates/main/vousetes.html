@@ -1,0 +1,54 @@
+{% load static %}
+<section class="bg-gray-50 py-16">
+    <div class="max-w-screen-xl mx-auto px-4 lg:px-6">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-12 text-center">Vous êtes ?</h2>
+        
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Particulier -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="{% static 'images/ball-desktop.webp' %}" 
+                    srcset="
+                        {% static 'images/ball-mobile.webp' %} 600w,
+                        {% static 'images/ball-desktop.webp' %} 1200w
+                    "
+                    sizes="(max-width: 600px) 100vw, 1200px"
+                    alt="Séances individuelles pour particuliers"
+                    class="w-full h-48 object-cover"
+                    loading="lazy">
+
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Particulier</h3>
+                    <p class="text-gray-600 mb-6">
+                        Séances individuelles ou en duo, à domicile ou en distanciel, adaptées à vos besoins et à votre rythme.
+                    </p>
+                    <a href="{% url 'particuliers' %}" class="inline-block bg-[#1cabb0] text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition">
+                        JE DÉCOUVRE
+                    </a>
+                </div>
+            </div>
+
+            <!-- Structures / Assos / Entreprises -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="{% static 'images/seance_groupe1-desktop.webp' %}" 
+                    srcset="
+                        {% static 'images/seance_groupe1-mobile.webp' %} 600w,
+                        {% static 'images/seance_groupe1-desktop.webp' %} 1200w
+                    "
+                    sizes="(max-width: 600px) 100vw, 1200px"
+                    alt="Séances individuelles pour particuliers"
+                    class="w-full h-48 object-cover"
+                    loading="lazy">
+
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Structures / Associations / Entreprises</h3>
+                    <p class="text-gray-600 mb-6">
+                        Sensibilisations, événements, ateliers de prévention ou programmes sur mesure pour vos salariés, adhérents ou participants.
+                    </p>
+                    <a href="{% url 'pros' %}" class="inline-block bg-[#1cabb0] text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition">
+                        JE DÉCOUVRE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
