@@ -22,7 +22,6 @@
 {% endblock %}
 
 {% block content %}
-{% with accent_color_hex='#8b5cf6' accent_hover='#a78bfa' accent_light='#8b5cf6' %}
 
 <section class="bg-white py-20">
   <div class="max-w-7xl mx-auto px-6 text-center">
@@ -34,9 +33,9 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
       <!-- Rendez-vous en ligne -->
-      <div class="bg-white border-t-4 border-[{{ accent_color_hex }}] rounded-2xl shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+      <div class="bg-white border-t-4 border-[#8b5cf6] rounded-2xl shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
         <div class="flex items-center justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-[{{ accent_light }}]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-[#8b5cf6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
           <h3 class="text-xl font-bold text-gray-900">Rendez-vous en ligne</h3>
@@ -44,15 +43,15 @@
         <p class="text-gray-600 mb-6 text-sm">
           Réservez directement un créneau pour commencer votre site.
         </p>
-        <a href="https://calendly.com/blinksite/30min" target="_blank" class="inline-block text-white font-bold py-3 px-8 rounded-lg shadow-md text-sm transition transform hover:scale-105" style="background-color: {{ accent_color_hex }};">
+        <a href="https://calendly.com/blinksite/30min" target="_blank" class="inline-block text-white font-bold py-3 px-8 rounded-lg shadow-md text-sm transition transform hover:scale-105" style="background-color: #8b5cf6;">
           Prendre rendez-vous
         </a>
       </div>
 
       <!-- E-mail -->
-      <div class="bg-white border-t-4 border-[{{ accent_color_hex }}] rounded-2xl shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+      <div class="bg-white border-t-4 border-[#8b5cf6] rounded-2xl shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
         <div class="flex items-center justify-center mb-4">
-          <svg class="w-6 h-6 mr-2 text-[{{ accent_light }}]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-6 h-6 mr-2 text-[#8b5cf6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
           </svg>
           <h3 class="text-xl font-bold text-gray-900">E-mail</h3>
@@ -61,20 +60,24 @@
           Envoyez vos textes et photos ou posez vos questions.
         </p>
         <p class="text-lg font-bold text-gray-700">
-          <a href="mailto:paul.dessain@gmail.com" class="hover:text-{{ accent_color_hex }} hover:underline">paul.dessain@gmail.com</a>
+          <a href="mailto:paul.dessain@gmail.com" class="hover:underline" style="transition: color 0.2s;" onmouseover="this.style.color='#8b5cf6'" onmouseout="this.style.color='';">
+            paul.dessain@gmail.com
+          </a>
         </p>
       </div>
 
       <!-- Téléphone -->
-      <div class="bg-white border-t-4 border-[{{ accent_color_hex }}] rounded-2xl shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+      <div class="bg-white border-t-4 border-[#8b5cf6] rounded-2xl shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
         <div class="flex items-center justify-center mb-4">
-          <svg class="w-6 h-6 mr-2 text-[{{ accent_light }}]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-6 h-6 mr-2 text-[#8b5cf6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a2 2 0 011.94 1.5l.35 1.4a2 2 0 01-.45 1.97L8 10a11 11 0 005 5l2.12-1.12a2 2 0 011.97-.45l1.4.35A2 2 0 0121 15.72V19a2 2 0 01-2 2h-1C8.82 21 3 15.18 3 8V5z"/>
           </svg>
           <h3 class="text-xl font-bold text-gray-900">Téléphone</h3>
         </div>
         <p class="text-lg font-bold text-gray-700">
-          <a href="tel:+33652677864" class="hover:text-{{ accent_color_hex }} hover:underline">06 52 67 78 64</a>
+          <a href="tel:+33652677864" class="hover:underline" style="transition: color 0.2s;" onmouseover="this.style.color='#8b5cf6'" onmouseout="this.style.color='';">
+            06 52 67 78 64
+          </a>
         </p>
         <p class="text-xs text-gray-500 mt-1">(Réponse sur rendez-vous privilégiée)</p>
       </div>
@@ -83,5 +86,4 @@
   </div>
 </section>
 
-{% endwith %}
 {% endblock %}
