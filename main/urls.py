@@ -14,4 +14,5 @@ urlpatterns = [
     path('temoignages/', views.temoignages, name='temoignages'),
     path('contact/', views.contact, name='contact'),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django-sitemap'),
+    path("robots.txt", views.robots_txt, name="robots_txt"),
 ]

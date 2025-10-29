@@ -66,4 +66,4 @@ def main():
             optimize_svg(os.path.join(IMG_DIR, file))
 
 
-convert_image("static/images/arthur.png")
+convert_image("static/images/arthur.jpg")

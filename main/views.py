@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 def home(request):
     """
@@ -26,3 +27,11 @@ def contact(request):
     Page Contact.
     """
     return render(request, 'main/contact.html')
+
+def robots_txt(request):
+    content = (
+        "User-agent: *\n"
+        "Disallow: /*?*\n"
+        "Sitemap: https://blinksite.fr/sitemap.xml\n"
+    )
+    return HttpResponse(content, content_type="text/plain")
