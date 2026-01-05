@@ -15,7 +15,12 @@
             border: 1px solid rgba(255, 255, 255, 0.1); 
             backdrop-filter: blur(10px);
         }
-        .highlight { border-bottom: 3px solid #FF7514; }
+        /* Style pour les liens CTA pour qu'ils ressemblent à des boutons */
+        .cta-button {
+            display: inline-block;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -28,226 +33,201 @@
             <h1 class="hero-title text-7xl md:text-9xl font-black italic uppercase tracking-tighter leading-none mb-6">
                 STOP RUNNING. <br> START <span class="orange-glow text-[#FF7514]">PLAYING.</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto font-medium">
+            <p class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto font-medium mb-10">
                 Marre de la "preuve sociale" et des chronos froids ? <br>
-                Transforme ta pratique de sport en <span class="text-white underline decoration-[#FF7514] underline-offset-4">jeu multijoueur</span> entre potes.
+                Transforme ton sport en <span class="text-white underline decoration-[#FF7514] underline-offset-4">jeu multijoueur</span> entre potes.
             </p>
+            <a href="TON_LIEN_GOOGLE_FORM" target="_blank" class="cta-button bg-[#FF7514] text-black font-black text-xl px-12 py-5 rounded-full hover:scale-105 shadow-[0_0_30px_rgba(255,117,20,0.4)]">
+                DEVENIR TESTEUR
+            </a>
         </div>
     </header>
 
-<section class="max-w-5xl mx-auto px-6 py-24">
-    <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div>
-            <h2 class="text-4xl font-extrabold mb-8 italic uppercase text-white">Le sport n'est pas <br> une corvée.</h2>
-            <p class="text-gray-400 text-lg leading-relaxed mb-6">
-                On a oublié que courir, c'était d'abord s'amuser. Dans <strong>ARENA</strong>, on ne vous impose pas de règles, on vous donne les clés de la partie. 
-            </p>
-            
-            <p class="text-white text-lg font-semibold border-l-4 border-[#FF7514] pl-6 py-2 mb-8">
-                Ici, vous êtes à la fois <strong>participant et Game Master</strong>. Imaginez vos propres défis, nous les rendons réels.
-            </p>
+    <section class="max-w-5xl mx-auto px-6 py-24">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-extrabold mb-8 italic uppercase text-white font-black">Le sport n'est pas <br> une corvée.</h2>
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                    On a oublié que courir, c'était d'abord s'amuser. Dans <strong>ARENA</strong>, on ne vous impose pas de règles, on vous donne les clés de la partie. 
+                </p>
+                
+                <p class="text-white text-lg font-semibold border-l-4 border-[#FF7514] pl-6 py-2 mb-8 italic">
+                    Ici, vous êtes à la fois <strong>participant et Game Master</strong>. Imaginez vos propres défis, nous les rendons réels.
+                </p>
 
-            <div class="space-y-4">
-                <div class="flex items-center gap-3 group">
-                    <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center group-hover:bg-[#FF7514] transition-colors">
-                        <span class="text-sm">🎮</span>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 group">
+                        <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center group-hover:bg-[#FF7514] transition-colors">
+                            <span class="text-sm">🎮</span>
+                        </div>
+                        <p class="text-gray-300"><strong>Créez vos modes :</strong> Un total de km collectif ? Un sprint final ? Vous décidez.</p>
                     </div>
-                    <p class="text-gray-300"><strong>Créez vos modes :</strong> Un total de km à faire en premier ? Un relais géant ? C'est vous qui décidez.</p>
+                    <div class="flex items-center gap-3 group">
+                        <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center group-hover:bg-[#FF7514] transition-colors">
+                            <span class="text-sm">🎲</span>
+                        </div>
+                        <p class="text-gray-300"><strong>Ludique & Varié :</strong> Chasses au trésor, relais ou défis absurdes... aucune limite.</p>
+                    </div>
                 </div>
-                <div class="flex items-center gap-3 group">
-                    <div class="w-8 h-8 rounded bg-white/10 flex items-center justify-center group-hover:bg-[#FF7514] transition-colors">
-                        <span class="text-sm">🎲</span>
+            </div>
+
+            <div class="card-glass p-8 rounded-3xl border border-white/20 shadow-2xl bg-gradient-to-br from-white/5 to-transparent">
+                <div class="mb-6">
+                    <span class="text-[#FF7514] text-xs font-black uppercase tracking-widest block mb-2">Interface Game Master</span>
+                    <h3 class="text-2xl font-bold italic uppercase tracking-tighter">Configurer le défi</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="p-4 bg-white/10 rounded-xl border border-white/5">
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold uppercase italic text-sm">🏁 Objectif 500 KM Collectifs</span>
+                            <div class="w-5 h-5 bg-[#FF7514] rounded flex items-center justify-center text-black text-[10px] font-bold">✓</div>
+                        </div>
                     </div>
-                    <p class="text-gray-300"><strong>Ludique & Varié :</strong> Chasses au trésor, survie, ou défis absurdes... l'imagination est la seule limite.</p>
+
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/5 opacity-60">
+                        <div class="flex justify-between items-center italic text-sm">
+                            <span>🔄 Relais Aléatoire</span>
+                            <div class="w-5 h-5 rounded-full border border-white/30"></div>
+                        </div>
+                    </div>
+
+                    <a href="TON_LIEN_GOOGLE_FORM" target="_blank" class="cta-button w-full py-4 bg-[#FF7514] text-black font-black uppercase italic rounded-xl hover:scale-105 shadow-lg">
+                        Lancer la partie
+                    </a>
+                </div>
+
+                <div class="mt-6 flex items-center justify-center gap-2">
+                    <div class="flex -space-x-2">
+                        <div class="w-6 h-6 rounded-full bg-gray-400 border border-black"></div>
+                        <div class="w-6 h-6 rounded-full bg-gray-600 border border-black"></div>
+                    </div>
+                    <span class="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Tes potes attendent ton défi</span>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="card-glass p-8 rounded-3xl border border-white/20 shadow-2xl bg-gradient-to-br from-white/5 to-transparent">
-            <div class="mb-6">
-                <span class="text-[#FF7514] text-xs font-black uppercase tracking-widest block mb-2">Interface Game Master</span>
-                <h3 class="text-2xl font-bold italic uppercase tracking-tighter">Configurer le défi</h3>
-            </div>
-
-            <div class="space-y-4">
-                <div class="p-4 bg-white/10 rounded-xl border border-white/5 hover:border-[#FF7514]/50 transition-all cursor-pointer">
-                    <div class="flex justify-between items-center">
-                        <span class="font-bold">🏁 Course au Score</span>
-                        <input type="checkbox" checked class="accent-[#FF7514]">
-                    </div>
-                    <p class="text-[10px] text-gray-500 mt-1 uppercase">Objectif : 500 KM Collectifs</p>
-                </div>
-
-                <div class="p-4 bg-white/5 rounded-xl border border-white/5 opacity-60">
-                    <div class="flex justify-between items-center">
-                        <span class="font-bold">🔄 Relais Aléatoire</span>
-                        <div class="w-4 h-4 rounded-full border border-white/30"></div>
-                    </div>
-                </div>
-
-                <button class="w-full py-4 bg-[#FF7514] text-black font-black uppercase italic rounded-xl hover:scale-105 transition-transform">
-                    Lancer la partie
-                </button>
-            </div>
-
-            <div class="mt-6 flex items-center justify-center gap-2">
-                <div class="flex -space-x-2">
-                    <div class="w-6 h-6 rounded-full bg-gray-400 border border-black"></div>
-                    <div class="w-6 h-6 rounded-full bg-gray-600 border border-black"></div>
-                </div>
-                <span class="text-[10px] text-gray-500 uppercase font-bold tracking-widest">4 potes attendent ton défi</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <section class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
+<section class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
     <div class="text-center mb-16">
         <h2 class="text-3xl font-black uppercase italic tracking-widest">Le gameplay du quotidien</h2>
-        <p class="text-gray-500 mt-4 max-w-2xl mx-auto font-medium">Fini les stats ennuyeuses. On implémente tous les jeux auxquels vous pensez. Vous êtes à la fois participant et <span class="text-[#FF7514]">Game Master</span>.</p>
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto font-medium">
+            Des classiques indispensables aux délires les plus tordus : <span class="text-white">on développe les modes que VOUS imaginez.</span> Vous nous donnez la règle, on code l'arène.
+        </p>
     </div>
     
     <div class="grid md:grid-cols-3 gap-8">
         <div class="card-glass p-10 rounded-[40px] hover:bg-white/5 transition border border-white/5">
-            <div class="text-4xl mb-6">🏁</div>
+            <div class="flex justify-between items-start mb-6">
+                <div class="text-4xl">🏁</div>
+                <span class="text-[10px] font-black py-1 px-3 bg-white/10 rounded-full uppercase tracking-widest">Le Classique</span>
+            </div>
             <h3 class="text-2xl font-bold mb-4 uppercase italic">Sprint Final</h3>
-            <p class="text-gray-400">Lancez un défi : "Le premier à atteindre 50km ce mois-ci". Suivez la progression de vos potes en direct. <span class="text-white">Celui qui arrive en dernier paie sa tournée.</span></p>
+            <p class="text-gray-400">Le premier à boucler 100km gagne le droit de choisir le prochain resto. Simple, efficace, impitoyable. <span class="text-white font-bold italic">Le basique qui ne rate jamais.</span></p>
         </div>
 
-        <div class="card-glass p-10 rounded-[40px] hover:bg-white/5 transition border-[#FF7514]/30 bg-[#FF7514]/5">
-            <div class="text-4xl mb-6">🤝</div>
-            <h3 class="text-2xl font-bold mb-4 uppercase italic">Raid Collectif</h3>
-            <p class="text-gray-400">Cumulez vos efforts pour un objectif commun. "Faire 500km à 4 en une semaine". Chaque kilomètre de chaque membre compte. <span class="text-white">L'union fait la force de frappe.</span></p>
+        <div class="card-glass p-10 rounded-[40px] hover:bg-[#FF7514]/10 transition border-[#FF7514]/40 bg-[#FF7514]/5 relative overflow-hidden">
+            <div class="absolute -right-4 -top-4 bg-[#FF7514] text-black px-8 py-1 rotate-45 text-[10px] font-black uppercase">Populaire</div>
+            <div class="flex justify-between items-start mb-6">
+                <div class="text-4xl">⚔️</div>
+                <span class="text-[10px] font-black py-1 px-3 bg-[#FF7514] text-black rounded-full uppercase tracking-widest">Affrontement</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 uppercase italic font-black">La Guerre des Clans</h3>
+            <p class="text-gray-400">2 équipes, 1 semaine. Kms, squats, tractions : chaque répétition alimente la cagnotte de votre clan. <span class="text-white font-bold underline decoration-[#FF7514]">L'équipe avec la plus grosse cagnotte rafle tout.</span></p>
         </div>
 
         <div class="card-glass p-10 rounded-[40px] hover:bg-white/5 transition border border-white/5">
-            <div class="text-4xl mb-6">🕹️</div>
-            <h3 class="text-2xl font-bold mb-4 uppercase italic">Le Mode "Maitre"</h3>
-            <p class="text-gray-400">Imaginez vos propres règles : chasse aux trésors, relais nocturnes ou défis insolites. <span class="text-white">Si vous pouvez le rêver, on peut le coder pour votre groupe.</span></p>
+            <div class="flex justify-between items-start mb-6">
+                <div class="text-4xl">🕹️</div>
+                <span class="text-[10px] font-black py-1 px-3 bg-purple-500/20 text-purple-400 border border-purple-500/30 rounded-full uppercase tracking-widest">Game Master</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 uppercase italic">Mode Custom</h3>
+            <p class="text-gray-400">Un Pictionary GPS ? Un relais où le témoin brûle si personne ne court ? <span class="text-white">Soumettez-nous votre délire, on le code et on l'injecte dans votre lobby privé.</span></p>
         </div>
+    </div>
+
+    <div class="mt-16 text-center">
+        <a href="TON_LIEN_GOOGLE_FORM" target="_blank" class="inline-flex flex-col md:flex-row items-center gap-4 bg-white/5 border border-white/10 px-10 py-6 rounded-3xl hover:border-[#FF7514]/50 transition group">
+            <div class="text-left">
+                <span class="block text-xs font-black uppercase tracking-[0.2em] text-[#FF7514] mb-1">Tu as une idée de génie ?</span>
+                <span class="text-xl font-bold text-white uppercase italic">On la code pour ton groupe.</span>
+            </div>
+            <span class="hidden md:block w-px h-10 bg-white/10 mx-4"></span>
+            <span class="bg-[#FF7514] text-black font-black px-6 py-2 rounded-lg group-hover:scale-110 transition-transform">PROPOSER MON JEU</span>
+        </a>
     </div>
 </section>
 
     <section class="py-24 px-6 bg-[#0A0A0A] border-y border-white/5">
         <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-stretch mb-20">
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-orange-500/10 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition"></div>
+                    <div class="relative card-glass p-8 rounded-[40px] border-white/10 h-full overflow-hidden flex flex-col justify-between" 
+                         style="background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.95)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800'); background-size: cover;">
+                        <div>
+                            <div class="flex justify-between items-center mb-6">
+                                <span class="text-[10px] font-black tracking-widest uppercase text-[#FF7514]">Défi Commun</span>
+                                <span class="text-[10px] font-bold py-1 px-3 bg-white/10 rounded-full border border-white/10 italic">#SummitRaid</span>
+                            </div>
+                            <h4 class="text-4xl font-black italic uppercase mb-2 tracking-tighter">Opération <br><span class="text-[#FF7514]">Everest.</span></h4>
+                            <p class="text-sm text-gray-400 mb-8 leading-relaxed">Cumulez <span class="text-white font-bold">8848m</span> de dénivelé à plusieurs. Chaque côte montée par un ami rapproche le groupe du sommet.</p>
+                        </div>
+                        <div class="h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-full bg-[#FF7514] w-[60%] shadow-[0_0_15px_rgba(255,117,20,0.5)]"></div></div>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-green-500/10 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition"></div>
+                    <div class="relative card-glass p-8 rounded-[40px] border-white/10 h-full overflow-hidden flex flex-col justify-between"
+                         style="background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.95)), url('https://images.unsplash.com/photo-1530143584546-02191bc84eb5?w=800'); background-size: cover;">
+                        <div>
+                            <div class="flex justify-between items-center mb-6">
+                                <span class="text-[10px] font-black tracking-widest uppercase text-green-400">Endurance Clan</span>
+                                <span class="text-[10px] font-bold py-1 px-3 bg-white/10 rounded-full border border-white/10 italic">#RelaisInfini</span>
+                            </div>
+                            <h4 class="text-4xl font-black italic uppercase mb-2 tracking-tighter">24H Non-Stop <br><span class="text-green-400">The Witness.</span></h4>
+                            <p class="text-sm text-gray-400 mb-8 leading-relaxed">Le témoin ne doit jamais s'arrêter. Relayez-vous pour que l'activité soit <span class="text-white font-bold">ininterrompue pendant 24h</span>.</p>
+                        </div>
+                        <div class="h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-full bg-green-500 w-[75%] shadow-[0_0_15px_rgba(52,211,153,0.5)]"></div></div>
+                    </div>
+                </div>
+            </div>
+
             <div class="flex flex-col md:flex-row items-center gap-16">
-
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 justify-center items-stretch">
-        
-        <div class="md:w-1/2 relative group">
-            <div class="absolute -inset-4 bg-orange-500/10 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition"></div>
-            <div class="relative card-glass p-8 rounded-[40px] border-white/10 h-full overflow-hidden flex flex-col justify-between" 
-                 style="background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800'); background-size: cover; background-position: center;">
-                
-                <div>
-                    <div class="flex justify-between items-center mb-6">
-                        <span class="text-[10px] font-black tracking-widest uppercase text-[#FF7514]">Défi Commun</span>
-                        <span class="text-[10px] font-bold py-1 px-3 bg-white/10 rounded-full border border-white/10 italic">#SummitRaid</span>
-                    </div>
-                    
-                    <h4 class="text-4xl font-black italic uppercase mb-2 tracking-tighter">Opération <br><span class="text-[#FF7514]">Everest.</span></h4>
-                    <p class="text-sm text-gray-300 mb-8 leading-relaxed">
-                        Cumulez <span class="text-white font-bold">8848m</span> de dénivelé positif en 7 jours. <br>
-                        Chaque côte montée par un ami rapproche le groupe du sommet.
-                    </p>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="flex justify-between items-end">
-                        <span class="text-xs font-bold opacity-60">10 Participants</span>
-                        <span class="text-xs font-bold text-[#FF7514]">60% Atteint</span>
-                    </div>
-                    <div class="h-3 bg-white/10 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-[#FF7514] to-orange-300 w-[60%] shadow-[0_0_15px_rgba(255,117,20,0.5)]"></div>
-                    </div>
-                    <div class="flex -space-x-2 pt-2">
-                        <div class="w-8 h-8 rounded-full border-2 border-[#161615] bg-gray-700 flex items-center justify-center text-[10px] font-bold">+7</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="md:w-1/2 relative group">
-            <div class="absolute -inset-4 bg-green-500/10 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition"></div>
-            <div class="relative card-glass p-8 rounded-[40px] border-white/10 h-full overflow-hidden flex flex-col justify-between"
-                 style="background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1530143584546-02191bc84eb5?w=800'); background-size: cover; background-position: center;">
-                
-                <div>
-                    <div class="flex justify-between items-center mb-6">
-                        <span class="text-[10px] font-black tracking-widest uppercase text-green-400">Endurance Clan</span>
-                        <span class="text-[10px] font-bold py-1 px-3 bg-white/10 rounded-full border border-white/10 italic">#RelaisInfini</span>
-                    </div>
-                    
-                    <h4 class="text-4xl font-black italic uppercase mb-2 tracking-tighter">24H Non-Stop <br><span class="text-green-400">The Witness.</span></h4>
-                    <p class="text-sm text-gray-300 mb-8 leading-relaxed">
-                        Le témoin virtuel ne doit jamais s'arrêter. <br>
-                        Relayez-vous pour que l'activité du groupe soit <span class="text-white font-bold">ininterrompue pendant 24h</span>.
-                    </p>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="flex justify-between items-end">
-                        <span class="text-xs font-bold opacity-60">6 Participants</span>
-                        <span class="text-xs font-bold text-green-400 flex items-center gap-1">
-                            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Témoin Actif
-                        </span>
-                    </div>
-                    <div class="h-3 bg-white/10 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-green-500 to-emerald-300 w-[75%] shadow-[0_0_15px_rgba(52,211,153,0.5)]"></div>
-                    </div>
-                    <div class="flex items-center gap-3 pt-2">
-                        <div class="w-8 h-8 rounded-full border-2 border-green-400 bg-gray-600"></div>
-                        <span class="text-[10px] font-bold text-white/70 italic uppercase">C'est au tour de Léo !</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-4xl md:text-5xl font-black italic uppercase mb-6 leading-none">
+                <div class="md:w-full text-center">
+                    <h2 class="text-4xl md:text-6xl font-black italic uppercase mb-6 leading-none">
                         DEVIENS <span class="text-[#FF7514]">L'ORGANISATEUR.</span>
                     </h2>
-                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
                         Marre des marathons classiques ? <span class="text-white font-bold">Invente tes propres règles.</span> 
-                        Arena te donne les clés pour créer des épreuves qui te ressemblent :
+                        Arena te donne les clés pour créer des épreuves qui te ressemblent.
                     </p>
-
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4">
-                            <div class="text-[#FF7514] text-2xl">✨</div>
-                            <div>
-                                <h5 class="font-bold text-lg uppercase italic">Tes Propres Défis</h5>
-                                <p class="text-gray-500 text-sm">Un concours de pas sur le week-end, une course d'orientation dans ton quartier ou un défi de grimpe à vélo.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div class="text-[#FF7514] text-2xl">🔒</div>
-                            <div>
-                                <h5 class="font-bold text-lg uppercase italic">Privé ou Public</h5>
-                                <p class="text-gray-500 text-sm">Garde ça pour ton cercle d'amis avec un code secret ou ouvre-le à toute la ville pour voir qui est le vrai patron.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div class="text-[#FF7514] text-2xl">📣</div>
-                            <div>
-                                <h5 class="font-bold text-lg uppercase italic">Partage ta pratique</h5>
-                                <p class="text-gray-500 text-sm">Fais découvrir tes chemins préférés et ta façon de t'entraîner. C'est toi qui crées l'ambiance.</p>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="grid md:grid-cols-3 gap-8 text-left">
+                        <div class="p-6 border-l border-white/10">
+                            <h5 class="font-bold text-[#FF7514] uppercase italic mb-2 italic">Tes Propres Défis</h5>
+                            <p class="text-gray-500 text-sm">Pas, vélo, grimpe : configure chaque variable de ta partie.</p>
+                        </div>
+                        <div class="p-6 border-l border-white/10">
+                            <h5 class="font-bold text-[#FF7514] uppercase italic mb-2 italic">Privé ou Public</h5>
+                            <p class="text-gray-500 text-sm">Garde ça pour ton cercle d'amis ou défie toute la ville.</p>
+                        </div>
+                        <div class="p-6 border-l border-white/10">
+                            <h5 class="font-bold text-[#FF7514] uppercase italic mb-2 italic">Zéro Corvée</h5>
+                            <p class="text-gray-500 text-sm">Si l'idée est fun, on l'ajoute. Tu es le Game Master.</p>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <footer class="py-20 text-center px-6">
-        <h3 class="text-4xl font-black italic mb-8 uppercase">Prêt à entrer dans l'arène ?</h3>
-        <button class="bg-[#FF7514] text-black font-black text-xl px-12 py-5 rounded-full hover:scale-105 transition shadow-[0_0_30px_rgba(255,117,20,0.4)]">
+    <footer class="py-32 text-center px-6">
+        <h3 class="text-5xl font-black italic mb-10 uppercase tracking-tighter">Prêt à entrer dans l'arène ?</h3>
+        <a href="TON_LIEN_GOOGLE_FORM" target="_blank" class="cta-button bg-[#FF7514] text-black font-black text-2xl px-16 py-6 rounded-full hover:scale-105 shadow-[0_0_40px_rgba(255,117,20,0.4)]">
             REJOINDRE LE LOBBY
-        </button>
-        <p class="mt-10 text-gray-600 font-medium">Bientôt disponible sur iPhone & Android.</p>
+        </a>
+        <p class="mt-12 text-gray-600 font-bold uppercase tracking-widest text-sm italic">Bientôt disponible sur iPhone & Android.</p>
     </footer>
 
 </body>
